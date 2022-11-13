@@ -56,3 +56,17 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
     darkToggle.checked = false;
   }
+
+
+  function gotoWhatsapp(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var pesan = document.getElementById("pesan").value;
+
+    var url = "https://wa.me/6282172716552?text="
+    +"Name:"+name+"%0a"
+    +"Email:"+email+"%0a"
+    +"Pesan:"+pesan;
+
+    window.open(url,  '_blank').focus();
+}
