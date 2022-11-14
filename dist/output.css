@@ -526,7 +526,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   animation: shimmer 2s ease-out infinite;
   content: "";
 }
+.column {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  height: 100%;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  transition: transform .5s ease;
+}
 
+
+.column img:hover {
+  transform: scale(1.5);
+}
 .shim-blue {
   position: relative;
   overflow: hidden;
@@ -548,7 +565,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   animation: shimmer 2.5s ease-out infinite;
   content: "";
 }
-
+.mid{
+  text-align: center;
+  justify-content: center;
+}
 .shim-red {
   position: relative;
   overflow: hidden;
