@@ -264,7 +264,7 @@ Kami, silahkan isi form berikut.</p>
         <div class="w-full px-4 mb-8">
     <label for="message" class="text-base font-bold
     text-primary">pesan</label>
-    <textarea type="pesan" id="pesan" name="pesan" class="w-full bg-slate-200
+    <textarea type="text" id="pesan" name="pesan" class="w-full bg-slate-200
     text-dark p-3 rounded-md focus:outline-none
     focus:ring-primary focus:ring-1 focus:border-primary h-32">
     </textarea>
@@ -377,9 +377,9 @@ Kami, silahkan isi form berikut.</p>
         var pesan = document.getElementById("pesan").value;
 
         var url = "https://wa.me/6282172716552?text="
-        +"Name:"+name+"%0a"
-        +"Email:"+email+"%0a"
-        +"Pesan:"+pesan;
+        +"Name: "+name+"%0a"
+        +"Email: "+email+"%0a"
+        +"Pesan: "+pesan;
 
         window.open(url,  '_blank').focus();
     }
