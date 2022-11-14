@@ -64,9 +64,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     var pesan = document.getElementById("pesan").value;
 
     var url = "https://wa.me/6282172716552?text="
-    +"Name:"+name+"%0a"
-    +"Email:"+email+"%0a"
-    +"Pesan:"+pesan;
+    +" Name: " +name+ "%0a"
+    +" Email: " +email+ "%0a"
+    +" Pesan: " +pesan;
 
     window.open(url,  '_blank').focus();
 }
